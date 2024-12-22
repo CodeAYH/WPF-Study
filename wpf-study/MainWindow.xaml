@@ -6,7 +6,24 @@
         xmlns:local="clr-namespace:wpf_study"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Window.Resources>
+        
+    </Window.Resources>
+        
+    <StackPanel HorizontalAlignment="Left">
+        <Button
+                Style="{StaticResource ButtonStyle}"
+                Margin="5">
+            <Button.Content>
+                <Border Margin="10">
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox />
+                        <TextBlock Text="Button1" />
+                    </StackPanel>
+                </Border>
+            </Button.Content>
+        </Button>
+        <Button Margin="5" Content="Button2" />
+    </StackPanel>
 
-    </Grid>
 </Window>
